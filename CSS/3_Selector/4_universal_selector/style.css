@@ -1,0 +1,21 @@
+/* Menargetkan seluruh tipe elemen */
+* {
+    color: green;
+  }
+  
+  /* Menargetkan seluruh tipe elemen yang mengandung nilai "en" pada atribut lang */
+  *[lang^='en'] {
+    font-style: italic;
+  }
+  
+  /* Menargetkan seluruh tipe elemen yang memiliki nilai "warning" pada atribut class */
+  *.warning {
+    color: red;
+  }
+  
+  /* Menargetkan seluruh tipe elemen yang memiliki nilai "content" pada atribut id */
+  *#content {
+    border: 1px solid blue;
+    padding: 20px;
+  }
+  
