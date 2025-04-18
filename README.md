@@ -1,3 +1,3 @@
 # Markup Languages
-Repository untuk belajar HTML &amp; CSS
+This repository will be used to learn the basics of markup languages.
 rtx trying
