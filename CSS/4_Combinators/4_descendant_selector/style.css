@@ -1,0 +1,4 @@
+/*Rule akan diterapkan pada elemen paragaf yang merupakan child dari elemen div*/
+div p {
+    background-color: yellow;
+}
