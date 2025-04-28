@@ -1,0 +1,29 @@
+body{
+    font-family: sans-serif;
+}
+
+a{
+    font-weight: bold;
+}
+
+.normal {
+  font-style: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+@font-face {
+    font-family: "Dicoding Font";
+    src: url('FILE-FONT.TTF');
+}
+
+main {
+  font-family: "Dicoding Font";
+  font-size: 25px;
+}
