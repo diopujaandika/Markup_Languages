@@ -1,0 +1,42 @@
+*{
+    font-family: sans-serif;
+}
+
+/*Line Height*/
+.ln2{
+    line-height: 2;
+    color: salmon;
+}
+.ln200{
+    line-height: 250%;
+    color: skyblue;
+}
+.ln2em{
+    line-height: 2em;
+    color: greenyellow;
+}
+
+/*Text-Indent*/
+.textIndent1{
+    text-indent: 2em;
+}
+.textIndent2{
+    text-indent: 25%;
+}
+.textIndent3{
+    text-indent: -35px;
+}
+
+/*Text Alignment*/
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
+}
+.align-center{
+    text-align: center;
+}
+.align-justify{
+    text-align: justify;
+}
