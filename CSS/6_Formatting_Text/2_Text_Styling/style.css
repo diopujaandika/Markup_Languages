@@ -6,14 +6,17 @@
 .ln2{
     line-height: 2;
     color: salmon;
+    letter-spacing: 4px;
 }
 .ln200{
     line-height: 250%;
     color: skyblue;
+    word-spacing: 1.5rem;
 }
 .ln2em{
     line-height: 2em;
-    color: greenyellow;
+    color: yellow;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 /*Text-Indent*/
@@ -30,13 +33,21 @@
 /*Text Alignment*/
 .align-left{
     text-align: left;
+    text-decoration: underline;
+    text-transform: none;
 }
 .align-right{
     text-align: right;
+    text-decoration: overline;
+    text-transform: capitalize;
 }
 .align-center{
     text-align: center;
+    text-decoration: line-through;
+    text-transform: lowercase;
 }
 .align-justify{
     text-align: justify;
+    text-decoration: none;
+    text-transform: uppercase;
 }
