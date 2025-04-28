@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+}
+
+main{
+    background-color: rgb(235, 255, 213);
+    padding: 20px 15px;
+}
+
+main > h1{
+    background-color: #4c5450;
+    padding: 15px;
+    color: white;
+}
+main > p{
+    background-color: #60d0a8;
+    padding: 15px;
+    color: white;
+}
+main > ul{
+    background-color: hsl(56, 62%, 85%);
+}
+
+main > ul > li{
+    padding: 20px;
+}
