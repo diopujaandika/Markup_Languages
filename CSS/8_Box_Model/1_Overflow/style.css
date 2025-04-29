@@ -1,0 +1,27 @@
+.box-visible{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    overflow: visible;
+}
+
+.box-hidden{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    overflow: hidden;
+}
+
+.box-scroll{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    overflow: scroll;
+}
+
+.box-auto{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    overflow: auto;
+}
