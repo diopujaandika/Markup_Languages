@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  main {
+    display: flex;
+  
+    flex-direction: column;
+  }
+  
+  main aside {
+    order: -1;
+  }
+  
+  /* Styles dalam block berikut akan diterapkan saat lebar viewport minimal 400 piksel. */
+  @media screen and (min-width: 400px) {
+    h1 {
+      color: red;
+    }
+  
+    h2 {
+      color: green;
+    }
+  }
+  
+  /* Styles dalam block berikut akan diterapkan saat lebar viewport minimal 600 piksel. */
+  @media screen and (min-width: 600px) {
+    main {
+      flex-direction: row;
+    }
+  
+    #mainContent {
+      flex-basis: 70%;
+    }
+  
+    main aside {
+      flex-basis: 30%;
+  
+      order: 1;
+    }
+  
+    h1 {
+      color: initial;
+    }
+  
+    h2 {
+      color: initial;
+    }
+  
+    h3 {
+      color: green;
+    }
+  }
+  
