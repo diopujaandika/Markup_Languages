@@ -1,6 +1,7 @@
 .block{
     background-color: palevioletred;
-    padding: 10px;
-    margin: 20px;
-    display: inline;
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    display: inline-block;
 }
