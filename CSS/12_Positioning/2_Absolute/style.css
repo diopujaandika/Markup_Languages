@@ -1,0 +1,19 @@
+
+.first{
+    width: 200px;
+    height: 200px;
+    background-color: #60d0a8;
+}
+.second{
+    width: 200px;
+    height: 200px;
+    background-color: #6495ed;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+.third{
+    width: 200px;
+    height: 200px;
+    background-color: #ffa500;
+}
