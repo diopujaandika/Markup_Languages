@@ -1,0 +1,9 @@
+.box1 {
+    font-size: 5rem;
+    max-width: 100%;
+
+    /*Centering horizontally*/
+    text-align: center;
+    /*Centering vertically*/
+    line-height: 250px;
+}
