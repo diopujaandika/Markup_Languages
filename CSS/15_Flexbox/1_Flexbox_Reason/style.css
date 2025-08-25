@@ -7,3 +7,66 @@
     /*Centering vertically*/
     line-height: 250px;
 }
+
+#app {
+    border: 2px solid red;
+}
+#app > *{
+    height: 300px;
+}
+aside{
+    background-color: lightcoral;
+    float: left;
+    width: 33%;
+}
+main{
+    background-color: lightgreen;
+    float: left;
+    width: 33%;
+}
+.toc{
+    background-color: lightskyblue;
+    float: right;
+    width: 34%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.product-list > .product-item {
+  float: left;
+
+  width: 50%;
+
+  /* Nyalakan kode berikut agar mencapai kesamaan tinggi */
+  /* height: 400px; */
+}
+
+.product-item {
+  border: 1px solid black;
+
+  transition: all 150ms ease-in;
+}
+
+.product-item main {
+  padding: 16px;
+}
+
+.product-item .product__title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.product-item .char__description {
+  margin-block: 0.5rem;
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+  padding: 18px 28px;
+}
