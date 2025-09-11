@@ -1,10 +1,38 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
 header{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black;
 }
-
-nav ul{
+header .name_web{
+    font-size: 15px;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    justify-content: flex-start;
+}
+header .name_web img{
+    width: 50px;
+}
+header nav{
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px black;
+    align-items: center;
+    gap: 2rem;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+header nav .call_to_action{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
