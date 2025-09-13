@@ -86,13 +86,9 @@ main{
     display: flex;
     flex-direction: row;
 }
-main #content{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
 
 aside{
+    height: 100%;
     background-color: #222627;
     display: flex;
     flex-direction: column;
@@ -132,4 +128,19 @@ aside .box_contact{
 aside .box_contact a{
     display: flex;
     flex-direction: row;
+}
+
+main #content{
+    display: flex;
+    flex-direction: column;
+    background-color: #222627;
+    border: solid 1px #727476;
+    border-radius: 12px;
+    margin-left: 20px;
+}
+
+main #content img{
+    width: 350px;
+    margin-top: 15px;
+    border-radius: 6px;
 }
