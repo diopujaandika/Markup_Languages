@@ -10,7 +10,6 @@ body{
     background-size: 200% 200%;
     animation: neonBG 15s ease infinite;
 }
-
 /* Animasi gradient bergerak */
 @keyframes neonBG {
   0% { background-position: 0% 50%; }
@@ -210,7 +209,7 @@ aside .box_contact a{
 main #content{
     display: flex;
     flex-direction: column;
-    background-color: #222627;
+    /* background-color: #222627; */
     border: solid 1px #727476;
     border-radius: 12px;
     margin: 0 20px 0 20px;
@@ -222,7 +221,7 @@ main #content img{
     border-radius: 6px;
 }
 
-/* .navigation_secondary{
+.navigation_secondary{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -231,9 +230,9 @@ main #content img{
     border-top: solid 1px #727476;
     border-bottom: solid 1px #727476;
     border-left: solid 1px #727476;
-    background-color: #222627; 
+    /* background-color: #222627;  */
     border-radius: 24px 0 0 24px;   
-} */
+}
 
 .description p{
     margin: 0 15px 25px 15px;
@@ -242,6 +241,32 @@ main #content img{
 .box_action{
     display: flex;
     flex-direction: row;
+}
+
+#toTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 3px;
+  background: #0f172a;
+  color: #38bdf8;
+  border: 2px solid #38bdf8;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  display: none; /* awalnya disembunyikan */
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px #38bdf8, 0 0 20px rgba(56,189,248,0.6);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+#toTopBtn:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  box-shadow: 0 0 15px #38bdf8, 0 0 30px rgba(56,189,248,0.8);
 }
 
 /* Cursor utama */

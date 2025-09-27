@@ -33,3 +33,24 @@ document.addEventListener("mouseup", () => {
   cursor.style.background = "rgba(56, 189, 248, 0.1)";
   cursor.style.boxShadow = "0 0 10px #38bdf8, 0 0 30px rgba(56, 189, 248, 0.5)";
 });
+
+const toTopBtn = document.getElementById("toTopBtn");
+
+// tampilkan tombol saat scroll ke bawah
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    toTopBtn.style.display = "flex";
+  } else {
+    toTopBtn.style.display = "none";
+  }
+});
+
+// scroll halus ke atas saat klik
+toTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+
