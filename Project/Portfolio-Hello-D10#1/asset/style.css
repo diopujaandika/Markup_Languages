@@ -4,8 +4,8 @@ body{
     background-color: #131718;
     color: #E9ECEF;
     /*Neon Background*/
-    background: radial-gradient(circle at top left, rgba(56, 191, 248, 0.247), transparent 50%),
-              radial-gradient(circle at bottom right, rgba(56, 191, 248, 0.247), transparent 50%),
+    background: radial-gradient(circle at top left, rgba(56, 191, 248, 0.247), transparent 60%),
+              radial-gradient(circle at bottom right, rgba(56, 191, 248, 0.247), transparent 60%),
               #000; /* dasar hitam */
     background-size: 200% 200%;
     animation: neonBG 15s ease infinite;
@@ -80,6 +80,19 @@ header{
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 1px #727476;
+    transform: translateY(-100%);
+    opacity: 0;
+    animation: slideDown 0.8s ease-out forwards;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 header .name_web{
     font-size: 15px;
@@ -106,6 +119,9 @@ header nav ul{
     flex-direction: row;
     gap: 2rem;
 }
+header nav ul a:hover{
+    color: #38bdf8;
+}
 header nav .call_to_action{
     display: flex;
     flex-direction: row;
@@ -120,11 +136,25 @@ main{
 
 aside{
     height: 100%;
-    background-color: #222627;
+    /* background-color: #222627; */
     display: flex;
     flex-direction: column;
     border: solid 1px #727476;
     border-radius: 12px;
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: slideIn 0.8s ease-out forwards;
+}
+/* Keyframes animasi */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 aside .social_media{
     display: flex;
@@ -177,7 +207,6 @@ aside .box_contact a{
     display: flex;
     flex-direction: row;
 }
-
 main #content{
     display: flex;
     flex-direction: column;
