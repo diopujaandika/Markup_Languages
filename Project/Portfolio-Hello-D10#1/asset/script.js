@@ -1,35 +1,17 @@
-const coords = {x: 0, y: 0};
-const circles = document.querySelectorAll(".circle");
+const cursor = document.querySelector(".cursor");
 
-circles.forEach(function(circle){
-    circle.x = 0;
-    circle.y = 0;
+document.addEventListener("mousemove", (e) => {
+  // Gerakkan cursor ke posisi mouse
+  cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
 });
 
-window.addEventListener("mousemove", function(e){
-    coords.x = e.clientX;
-    coords.y = e.clientY;
-
+// Efek saat klik
+document.addEventListener("mousedown", () => {
+  cursor.style.transform += " scale(0.8)";
+  cursor.style.background = "#38bdf8";
 });
 
-function animateCircles(){
-
-    let x = coords.x;
-    let y = coords.y;
-
-    circles.forEach(function(circle, index){
-        circle.style.left = x - 12 + "px";
-        circle.style.top = y - 12 + "px";
-
-        circle.style.scale = (circles.length - index) / circles.length;
-
-        circle.x = x;
-        circle.y = y;
-
-        const nextCircle = circles[index + 1] || circles[0];
-        x += (nextCircle.x - x) * 0.3;
-        y += (nextCircle.y - y) * 0.3;
-    });
-}
-
-animateCircles();
+document.addEventListener("mouseup", () => {
+  cursor.style.transform = cursor.style.transform.replace(" scale(0.8)", "");
+  cursor.style.background = "transparent";
+});

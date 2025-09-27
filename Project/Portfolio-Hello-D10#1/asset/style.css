@@ -177,12 +177,16 @@ main #content img{
     flex-direction: row;
 }
 
-.circle{
-    height: 24px;
-    width: 24px;
-    border-radius: 24px;
-    background-color: #727476;
-    position: absolute;
-    top: 0;
-    left: 0;
+/* Elemen cursor */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #38bdf8;
+  border-radius: 50%;
+  pointer-events: none; /* supaya tidak menghalangi klik */
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out, background 0.2s;
 }
