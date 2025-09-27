@@ -4,6 +4,9 @@ body{
     background-color: #131718;
     color: #E9ECEF;
 }
+ul{
+    list-style-type: none;
+}
 a{
     text-decoration: none;
     color: #E9ECEF;
@@ -16,7 +19,7 @@ button{
     font-size: 15px;
     font-weight: bold;
     border: solid 1px #727476;
-    border-radius: 6px;
+    border-radius: 50px;
     margin: 5px;
     padding: 15px;
     flex: 1;
@@ -82,7 +85,7 @@ header nav .call_to_action{
 }
 
 main{
-    margin: 20px;
+    margin: 20px 0 20px 20px;
     display: flex;
     flex-direction: row;
 }
@@ -105,6 +108,13 @@ aside .profile{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
 }
 aside .profile img{
     width: 150px;
@@ -136,11 +146,43 @@ main #content{
     background-color: #222627;
     border: solid 1px #727476;
     border-radius: 12px;
-    margin-left: 20px;
+    margin: 0 20px 0 20px;
 }
 
 main #content img{
     width: 350px;
     margin-top: 15px;
     border-radius: 6px;
+}
+
+.navigation_secondary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    border-top: solid 1px #727476;
+    border-bottom: solid 1px #727476;
+    border-left: solid 1px #727476;
+    background-color: #222627; 
+    border-radius: 24px 0 0 24px;   
+}
+
+.description p{
+    margin: 0 15px 25px 15px;
+}
+
+.box_action{
+    display: flex;
+    flex-direction: row;
+}
+
+.circle{
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: #727476;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
