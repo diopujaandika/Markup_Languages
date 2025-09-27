@@ -1,17 +1,35 @@
 const cursor = document.querySelector(".cursor");
+const trail = document.querySelector(".cursor-trail");
 
+// posisi awal
+let mouseX = 0, mouseY = 0;
+let trailX = 0, trailY = 0;
+
+// update posisi mouse
 document.addEventListener("mousemove", (e) => {
-  // Gerakkan cursor ke posisi mouse
-  cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+
+  cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
 });
 
-// Efek saat klik
+// animasi trailing
+function animateTrail() {
+  trailX += (mouseX - trailX) * 0.1;
+  trailY += (mouseY - trailY) * 0.1;
+  trail.style.transform = `translate(${trailX}px, ${trailY}px)`;
+  requestAnimationFrame(animateTrail);
+}
+animateTrail();
+
+// efek klik
 document.addEventListener("mousedown", () => {
-  cursor.style.transform += " scale(0.8)";
+  cursor.style.transform += " scale(0.7)";
   cursor.style.background = "#38bdf8";
+  cursor.style.boxShadow = "0 0 20px #38bdf8, 0 0 60px rgba(56, 189, 248, 0.8)";
 });
 
 document.addEventListener("mouseup", () => {
-  cursor.style.transform = cursor.style.transform.replace(" scale(0.8)", "");
-  cursor.style.background = "transparent";
+  cursor.style.background = "rgba(56, 189, 248, 0.1)";
+  cursor.style.boxShadow = "0 0 10px #38bdf8, 0 0 30px rgba(56, 189, 248, 0.5)";
 });

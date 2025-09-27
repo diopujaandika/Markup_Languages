@@ -4,6 +4,9 @@ body{
     background-color: #131718;
     color: #E9ECEF;
 }
+* {
+  cursor: none !important;
+}
 ul{
     list-style-type: none;
 }
@@ -177,16 +180,35 @@ main #content img{
     flex-direction: row;
 }
 
-/* Elemen cursor */
+/* Cursor utama */
 .cursor {
   position: fixed;
   top: 0;
   left: 0;
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 18px;
   border: 2px solid #38bdf8;
   border-radius: 50%;
-  pointer-events: none; /* supaya tidak menghalangi klik */
+  pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: transform 0.1s ease-out, background 0.2s;
+  transition: transform 0.15s ease-out, background 0.2s, box-shadow 0.3s;
+  z-index: 1000;
+  background: rgba(56, 189, 248, 0.1);
+  box-shadow: 0 0 10px #38bdf8, 0 0 30px rgba(56, 189, 248, 0.5);
+}
+
+/* Trail (ekor cursor) */
+.cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background: rgba(56, 189, 248, 0.15);
+  filter: blur(12px);
+  z-index: 999;
+  transition: transform 0.3s ease-out;
 }
