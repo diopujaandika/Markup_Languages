@@ -166,13 +166,6 @@ aside .profile{
     align-items: center;
     justify-content: center;
 }
-
-.description{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-}
 aside .profile img{
     width: 150px;
     margin-top: 15px;
@@ -206,14 +199,26 @@ aside .box_contact a{
     display: flex;
     flex-direction: row;
 }
-main #content{
+main #content {
     display: flex;
     flex-direction: column;
-    /* background-color: #222627; */
     border: solid 1px #727476;
     border-radius: 12px;
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
+
+    /* Animasi */
+    opacity: 0;
+    transform: translateY(40px);  /* mulai agak ke bawah */
+    animation: slideUp 1s ease-out forwards;
 }
+/* Keyframes animasi */
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* berhenti di posisi normal */
+    }
+}
+
 main #content .description h2 {
     font-size: 32px;
     text-align: center;
@@ -222,7 +227,7 @@ main #content .description h2 span {
     color: #38bdf8; 
 }
 main #content .description p {
-    margin: 0px 15px 15px 15px;
+    margin: 0px 25px 25px 25px;
     text-align: center;
 }
 main #content .box_action{
@@ -352,3 +357,82 @@ main #content .box_action .box:hover{
   z-index: 999;
   transition: transform 0.3s ease-out;
 }
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 28px;
+  width: 3px;
+  background: linear-gradient(to bottom, #38bdf8, #222627);
+}
+
+.timeline-item {
+  position: relative;
+  margin-left: 70px;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUp 0.8s ease forwards;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.2s; }
+.timeline-item:nth-child(2) { animation-delay: 0.4s; }
+.timeline-item:nth-child(3) { animation-delay: 0.6s; }
+
+.timeline-date {
+  font-size: 14px;
+  color: #38bdf8;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.timeline-content {
+  background: #222627;
+  border: 1px solid #727476;
+  border-radius: 12px;
+  padding: 18px 22px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.45);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -42px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background: #444;
+  border-radius: 50%;
+  border: 3px solid #222627;
+  transition: all 0.3s ease;
+}
+
+.timeline-item.active::before {
+  background: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8, 0 0 16px #38bdf8;
+  transform: scale(1.2);
+}
+/* Animasi muncul */
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
