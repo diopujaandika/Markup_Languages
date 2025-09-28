@@ -254,7 +254,6 @@ main #content .box_action .box:hover{
                 0 0 20px rgba(56,189,248,0.8),
                 0 0 40px rgba(56,189,248,0.6);
 }
-
 main #content h2{
     padding-left: 20px;
 }
@@ -268,7 +267,6 @@ main #content .box-experience{
     border-radius: 12px;
     gap: 1rem;
 }
-
 main #content .box-experience a img{
     margin-top: 20px;
     width: 80px;
@@ -392,4 +390,3 @@ main #content .box-experience .description-experience h5{
   z-index: 999;
   transition: transform 0.3s ease-out;
 }
-
