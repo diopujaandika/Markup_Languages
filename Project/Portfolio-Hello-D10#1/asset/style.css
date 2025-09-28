@@ -255,17 +255,53 @@ main #content .box_action .box:hover{
                 0 0 40px rgba(56,189,248,0.6);
 }
 
+main #content h2{
+    padding-left: 20px;
+}
+main #content .box-experience{
+    margin: 5px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    background-color: rgba(56, 191, 248, 0.035);
+    /* border: solid 1px #72747650; */
+    border-radius: 12px;
+    gap: 1rem;
+}
+main #content .box-experience a img{
+    margin-top: 20px;
+    width: 80px;
+    border-radius: 2px;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+    box-shadow: 0 0 15px rgba(56,189,248,0.4);
+}
+main #content .box-experience a img:hover {
+    filter: grayscale(0%);
+    box-shadow: 0 0 15px rgba(56,189,248,0.8);
+}
+main #content .box-experience .description-experience h4{
+    margin-top: -10px;
+    color: #727476;
+}
+main #content .box-experience .description-experience h5{
+    margin-top: -10px;
+    color: #727476;
+}
+
 .navigation_secondary {
     position: fixed;
     right: 0px;
     top: 50%;
+    border-top: solid 1px #727476;
+    border-bottom: solid 1px #727476;
+    border-left: solid 1px #727476;
     transform: translateY(-50%);
     font-weight: bold;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2px; /* jarak antar item lebih kecil */
-
     background-color: rgb(0, 21, 30);
     border-radius: 16px 0 0 16px;
     padding: 5px 5px;
@@ -299,17 +335,16 @@ main #content .box_action .box:hover{
     color: #111;
 }
 
-
 #toTopBtn {
   position: fixed;
   bottom: 20px;
-  right: 3px;
+  right: -10px;
   background: #0f172a;
   color: #38bdf8;
   border: 2px solid #38bdf8;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  border-radius: 12px 0px 0px 12px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   font-size: 20px;
   display: none; /* awalnya disembunyikan */
@@ -341,7 +376,6 @@ main #content .box_action .box:hover{
   background: rgba(56, 189, 248, 0.1);
   box-shadow: 0 0 10px #38bdf8, 0 0 30px rgba(56, 189, 248, 0.5);
 }
-
 /* Trail (ekor cursor) */
 .cursor-trail {
   position: fixed;
@@ -357,82 +391,4 @@ main #content .box_action .box:hover{
   z-index: 999;
   transition: transform 0.3s ease-out;
 }
-
-.timeline {
-  position: relative;
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 28px;
-  width: 3px;
-  background: linear-gradient(to bottom, #38bdf8, #222627);
-}
-
-.timeline-item {
-  position: relative;
-  margin-left: 70px;
-  margin-bottom: 40px;
-  opacity: 0;
-  transform: translateY(40px);
-  animation: slideUp 0.8s ease forwards;
-}
-
-.timeline-item:nth-child(1) { animation-delay: 0.2s; }
-.timeline-item:nth-child(2) { animation-delay: 0.4s; }
-.timeline-item:nth-child(3) { animation-delay: 0.6s; }
-
-.timeline-date {
-  font-size: 14px;
-  color: #38bdf8;
-  font-weight: bold;
-  margin-bottom: 6px;
-}
-
-.timeline-content {
-  background: #222627;
-  border: 1px solid #727476;
-  border-radius: 12px;
-  padding: 18px 22px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.35);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.timeline-content:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.45);
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -42px;
-  top: 10px;
-  width: 20px;
-  height: 20px;
-  background: #444;
-  border-radius: 50%;
-  border: 3px solid #222627;
-  transition: all 0.3s ease;
-}
-
-.timeline-item.active::before {
-  background: #38bdf8;
-  box-shadow: 0 0 8px #38bdf8, 0 0 16px #38bdf8;
-  transform: scale(1.2);
-}
-/* Animasi muncul */
-@keyframes slideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 
