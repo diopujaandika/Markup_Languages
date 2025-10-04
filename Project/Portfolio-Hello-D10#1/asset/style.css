@@ -279,6 +279,10 @@ main #content .box-experience a img:hover {
     filter: grayscale(0%);
     box-shadow: 0 0 15px rgba(56,189,248,0.8);
 }
+main #content .box-experience .description-experience .decription-header-experience{
+    display: flex;
+    flex-direction: row;
+}
 main #content .box-experience .description-experience h4{
     margin-top: -10px;
     color: #727476;
