@@ -3,8 +3,8 @@ body{
     font-family: "Montserrat", sans-serif;
     background-color: #131718;
     color: #E9ECEF;
-    background: radial-gradient(circle at top left, rgba(56, 191, 248, 0.247), transparent 60%),
-              radial-gradient(circle at bottom right, rgba(56, 191, 248, 0.247), transparent 60%),
+    background: radial-gradient(circle at top left, rgba(56, 191, 248, 0.247), transparent 80%),
+              radial-gradient(circle at bottom right, rgba(22, 77, 100, 0.247), transparent 80%),
               #000;
     background-size: 200% 200%;
     animation: neonBG 20s ease infinite;
