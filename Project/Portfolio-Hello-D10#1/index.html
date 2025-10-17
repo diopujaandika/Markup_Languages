@@ -26,10 +26,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Experiences</a></li>
-                    <li><a href="#">Skill</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#skillstools">Skill</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
                 <div class="call_to_action">
                     <div class="box_cta">
@@ -118,12 +118,13 @@
 
             <div id="content">
                 <section id="description">
-                    <article class="description">
+                    <article id="home" class="description">
                         <h2>I'am Dio Puja Andika, a <span>Software Engineer</span>!</h2>
                         <p>A bachelor of Informatics and Computer Engineering Education from Universitas Negeri Semarang - Indonesia, with 3+ years of experience in software development. Familiar with ux design, mobile development, web development, and Machine Learning.</p>
                     </article>
                 </section>
-                <section id="experience">
+
+                <section id="experiences">
                     <h2>Experiences</h2>
                     <article class="box-experience">
                         <a href="https://bekup.kemenparekraf.go.id/" target="_blank">
@@ -217,64 +218,37 @@
                     </article>
                 </section>
 
-               <section id="skill" class="py-16 bg-gray-50">
-  <div class="max-w-5xl mx-auto px-6">
-    <!-- Judul -->
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-10 border-b-4 border-indigo-500 inline-block">
-      Skill
-    </h2>
+                <section id="skillstools">
+                    <h2>Skill & Tools</h2>
+                    <p>Melihat semua bahasa pemrograman, libraries, dan tools yang pernah saya gunakan, saya mulai memprogram sejak 2020. Saya telah mencoba beberapa bahasa pemrograman dan tumpukan teknologi.</p>
+                    <p>Meskipun cakupan pengembangan perangkat lunak luas, saya sangat tertarik dan fokus pada pengembangan Full-stack dan Machine Learning.</p>
+                </section>
 
-    <!-- Tabel Skill -->
-    <div class="overflow-x-auto bg-white rounded-lg shadow-md">
-      <table class="min-w-full text-left border-collapse">
-        <thead class="bg-indigo-600 text-white">
-          <tr>
-            <th class="px-6 py-3 text-sm font-semibold uppercase">Skill Path</th>
-            <th class="px-6 py-3 text-sm font-semibold uppercase">Tools</th>
-            <th class="px-6 py-3 text-sm font-semibold uppercase">Level</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-gray-200 text-gray-700">
-          <tr class="hover:bg-gray-100 transition">
-            <td class="px-6 py-4 font-medium">Mobile Development</td>
-            <td class="px-6 py-4">Flutter, Kotlin, Dart</td>
-            <td class="px-6 py-4">
-              <span class="px-3 py-1 text-sm bg-green-100 text-green-700 rounded-full font-medium">
-                Intermediate
-              </span>
-            </td>
-          </tr>
+                <section class="contact-section">
+                    <div class="contact-container">
+                        <h1>Contact Me</h1>
+                        <p>Silakan hubungi saya melalui form di bawah ini atau lewat media sosial.</p>
 
-          <tr class="hover:bg-gray-100 transition">
-            <td class="px-6 py-4 font-medium">Machine Learning</td>
-            <td class="px-6 py-4">Python, TensorFlow, Scikit-learn</td>
-            <td class="px-6 py-4">
-              <span class="px-3 py-1 text-sm bg-yellow-100 text-yellow-700 rounded-full font-medium">
-                Beginner
-              </span>
-            </td>
-          </tr>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nama</label>
+                                <input type="text" id="name" name="name" placeholder="Masukkan nama kamu" required>
+                            </div>
 
-          <tr class="hover:bg-gray-100 transition">
-            <td class="px-6 py-4 font-medium">Fullstack Development</td>
-            <td class="px-6 py-4">React, Node.js, Express, MongoDB</td>
-            <td class="px-6 py-4">
-              <span class="px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full font-medium">
-                Advanced
-              </span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Masukkan email kamu" required>
+                            </div>
 
-    <!-- Catatan -->
-    <p class="text-center text-sm text-gray-500 mt-6">
-      *Level berdasarkan pengalaman pribadi dan proyek yang telah diselesaikan.
-    </p>
-  </div>
-</section>
+                            <div class="form-group">
+                                <label for="message">Pesan</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+                            </div>
 
+                            <button type="submit" class="btn-submit">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </section>
             </div>
         </main>
 
@@ -293,7 +267,7 @@
                     </ul>
                 </div>
                 <div class="social_media">
-                    <a href="#">
+                    <a href="#home">
                         <div class="box_cta">
                             <i class="fa-brands fa-linkedin"></i>
                         </div>
