@@ -339,14 +339,16 @@ button i {
 }
 /* === MAIN | BERANDA END === */
 
+/* === MAIN | AKADEMIK START === */
 .akademik{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 0 30px;
 }
 .head_akademik{
+    margin-top: 30px;
     gap: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -378,28 +380,44 @@ button i {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
 }
-.body_akademik img{
-    width: 50%;
+.hero_akademik img{
+    margin-left: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: block;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+}
+.hero_akademik img:hover{
+    filter: grayscale(0%);
 }
 .card_akademik{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .primary_box{
-    width: 20%;
+    width: 40%;
     border-radius: 6px;
     background-color: var(--color-gray-transparent);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.150);
-    margin: 30px 30px;
-    padding: 20px 20px;
+    margin: 5px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    animation-duration: 10s;
+}
+.primary_box:hover{
+    background-color: var(--color-hawkes-blue);
+    box-shadow: 0 8px 32px var(--color-hawkes-blue);
+    color: var(--color-white);
 }
 .primary_box h3{
     color: var(--color-black);
@@ -419,4 +437,17 @@ button i {
 .primary_box p{
     text-align: center;
     color: var(--color-black-text);
+}
+/* === MAIN | AKADEMIK END === */
+
+/* === MAIN | PROGRAM START === */
+.program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161623;
+}
+.program::before{
+    content: '';
 }
