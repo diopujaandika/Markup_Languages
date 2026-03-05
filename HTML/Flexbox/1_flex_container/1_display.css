@@ -1,0 +1,80 @@
+.container{
+    display: flex;  /*mengidetifikasi jika suatu elemen bersifat flex dan ini bersifat WAJIB*/
+
+    flex-direction: row; /*Mengubah arah flex items dalam suatu flex container.
+    1. row              => inline
+    2. row-reverse      => inline terbalik
+    3. column           => block
+    4. column-reverse   => block terbalik
+    */
+
+    flex-wrap: wrap; /*Membuat posisi flex items menjadi lebih fleksible dalam suatu flex container, sehingga tidak dalam baris yang sama.
+    1. nowrap           => posisi flex items akan selalu dalam baris yang sama sehingga mengubah ukuran flex item yang asli.
+    2. wrap             => posisi flex items akan selalu mempertahankan ukuran flex itemsnya sehingga jika flex container tidak dapat menampung dalam satu baris maka flex items akan diteruskan ke baris berikutnya (multiple lines).
+    3. wrap-reverse     => serupa dengan wrap akan tetapi flex items akan di susun secara terbalik.
+    */
+
+    justify-content: center; /*Membuat jarak atar items pada suatu flex container lebih presisi dari sisi main axis.
+    1. flex-start       => flex items dimulai dari main-start.
+    2. flex-end         => flex items dimulai dari main-end.
+    3. center           => flex items diletakkan ditengah flex container.
+    4. space-between    => flex items pertama di main-start dan flex items akhir di main-end. Untuk flex items sisa akan berada ditengah dengan jarak yang sama.
+    5. space-around     => flex items akan memiliki jarak dengan ukuran yang sama pada sisi horizontal.
+    6. space-evenly     => setiap flex itmes akan memiliki jarak yang setara, termasuk main-start dan main-end.
+    */
+
+    align-items: center; /*Mengatur letak flex item dalam satu baris pada cross axis.
+    1. flex-start       => flex items akan memiliki ukuran height sesuai dengan isi konten serta seluruhnya akan berada di tepi cross-start.
+    2. flex-end         => serupa dengan flex-start tetapi berada di cross-end.
+    3. center           => flex items memiliki ukuran height sesuai dengan isi konten dan secara vertikal   
+    4. streach          => flex items melebar hingga memenuhi contariner dalam cross axis.
+    5. baseline         => mirip flex-start akan tetapi jika child element memiliki ukuran yang berbeda, maka posisinya akan menyesuaikan dengan cross axis dan cross-start.
+    */
+
+    align-content: space-evenly; /*Serupa dengan justit-content Mengatur perataan terhadap flex items pada stiap baris dalam cross-axis, akan tetapi hanya berpengaruh pada multi-line flex container dan properti flex-wrap. Jika single line tidak akan berpengaruh.
+    1. Normal (default)
+    2. Flex-start       => flex items ditata pada permulaan flex container.
+    3. Flex-end         => flex items ditata pada akhir flex container.
+    4. Flex-center      => flex items diposisikan ditengah flex container.
+    5. Space-between    => flex items akan disebarkan secara merata. item peretama di corss-start dan item terakhir di cross-end.
+    6. Space- around    => flex items akan disebarkan secara merata, dengan jarak celah ya sama.
+    7. Space-evenly     => flex items akan disebarkan secara merata dengan jarak yang merata juga
+    */
+
+    gap: 1rem ; /* untuk memberikan jarak atau celah (margin) antar flex items.
+    */
+}
+
+.box1{
+    border: solid 1px black;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    order: 2; /*menentukan urutan flex items*/
+    flex-grow: 1; /*menentukan perbandingan ukuran-ukuran flex items dalam flex container.*/
+    flex-shrink: 1; /*menyusutkan atau mencitukan ukuran child element jika ukurannya tidak mencukupi ruang container.*/
+    flex-basis: 1rem; /*memberikan ukuran default sebelum sisa ruang container didistri usikan kepada flex items (width dan height) => rem, %,autao, dll.*/
+
+}
+.box2{
+    border: solid 1px black;
+    width: 80px;
+    height: 50px;
+    margin: 2px;
+    order: 3;
+    flex-grow: 1;
+}
+.box3{
+    border: solid 1px black;
+    width: 150px;
+    height: 80px;
+    margin: 2px;
+    order: 1;
+}
+.box4{
+    border: solid 1px black;
+    width: 200px;
+    height: 120px;
+    margin: 2px;
+    order: -1;
+}
