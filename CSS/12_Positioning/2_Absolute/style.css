@@ -8,9 +8,11 @@
     width: 200px;
     height: 200px;
     background-color: #6495ed;
-    position: absolute;
+    position: absolute; /*Conton naik 1 level dari konten lain dengan menghapus poisi semula.*/
     top: 30px;
     left: 10px;
+    right: 15px;
+    bottom: 25px;
 }
 .third{
     width: 200px;

@@ -46,6 +46,9 @@
     --color-danger: #dc2626;
 }
 
+* {
+  cursor: none !important;
+}
 
 /* === HEADER SYTLE START === */
 .header {
@@ -337,7 +340,188 @@ button i {
         border-radius: 50%;
     }
 }
+.data{
+    display: flex;
+    flex-direction: row;
+    padding: 12px 0px 12px 0px;
+    border-bottom: solid 1px var(--color-gray);;
+}
+.data-deskripsi{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black-text);
+}
+.data-deskripsi span{
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background-color: var(--color-hawkes-blue);
+}
+.data-deskripsi span i{ 
+    font-size: 30px;
+    color: var(--color-white);
+}
+.data-warga{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    margin: 12px;
+}
+.data-warga h3{
+    font-size: 70px;
+}
+.data-warga p{
+    color: var(--color-black-text);
+}
 /* === MAIN | BERANDA END === */
+
+/* === MAIN | PROGRAM START === */
+.program{
+    margin: 2% 6%;
+    border-radius: 12px;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head-program{
+    margin-top: 30px;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head-program h2{
+    color: var(--color-black);
+    background-color: var(--color-white);
+    font-size: 20px;
+    border: solid 1px var(--color-gray);
+    border-radius: 50px;
+    padding: 6px 12px 6px 2px;
+}
+.head-program span{
+    color: var(--color-white);
+    background-color: var(--color-black);
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 3px 12px;
+    margin-left: 2px;
+}
+.head-program p{
+    color: var(--color-white);
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-bottom: 2px solid var(--color-secondary);
+}
+.card_program{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: 2% 5%;
+}
+.box_program{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: var(--color-gray);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    margin: 12PX;
+    padding: 24PX;
+}
+.box_program h3{
+    color: var(--color-secondary);
+    font-size: 24px;
+}
+.box_program a{
+    color: var(--color-white);
+    font-weight: bold;
+}
+.box_program i{
+    font-size: 50px;
+    padding: 6px 0;
+    border-radius: 6px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.150);
+    color: var(--color-white);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+/* === MAIN | PROGRAM END === */
+
+/* === MAIN | VISI MISI START === */
+.visi-misi-sekolah{
+    border-top: solid 1px var(--color-gray);
+    border-bottom: solid 3rem var(--color-primary);
+}
+.visi-misi{
+    display: flex;
+    flex-direction: row;
+    margin: 2% 5%;
+    gap: 1rem;
+}
+.visi-misi h2{
+    font-size: 30px;
+    color: var(--color-primary);
+}
+.visi-misi span{
+    font-size: 30px;
+    color: var(--color-white);
+    padding: 24px;
+    border-radius: 12px;
+    background-color: var(--color-hawkes-blue);
+}
+.visi-misi p{
+    text-align: right;
+}
+.visi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 15px;
+    gap: 1rem;
+    padding: 24px;
+    width: 50%;
+    color: var(--color-black-text);
+    /* border: solid 1px var(--color-gray); */
+    border-radius: 12px;
+    /* background-color: var(--color-hawkes-blue); */
+}
+.misi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 2;
+    margin-right: 15px;
+    gap: 1rem;
+    padding: 24px;
+    width: 50%;
+    color: var(--color-black-text);
+    /* border-bottom: solid 1rem var(--color-gray); */
+    border-radius: 0 0 0 12px;
+    /* background-color: var(--color-hawkes-blue); */
+}
+.visi-misi img{
+    border-radius: 12px;
+    width: 40%;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+}
+.visi-misi img:hover{
+    filter: grayscale(0%);
+}
+/* === MAIN | VISI MISI END === */
 
 /* === MAIN | AKADEMIK START === */
 .akademik{
@@ -382,11 +566,12 @@ button i {
     flex-direction: row;
     align-items: flex-end;
 }
+.hero_akademik{
+    width: 50%;
+}
 .hero_akademik img{
     margin-left: 30px;
     width: 100%;
-    display: flex;
-    flex-direction: block;
     filter: grayscale(100%);
     transition: filter 0.5s ease-in-out;
 }
@@ -394,6 +579,7 @@ button i {
     filter: grayscale(0%);
 }
 .card_akademik{
+    width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -402,10 +588,11 @@ button i {
 }
 .primary_box{
     width: 40%;
-    border-radius: 6px;
+    border: solid 1px var(--color-gray);
+    /* border-radius: 6px; */
     background-color: var(--color-gray-transparent);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.150);
-    margin: 5px;
+    /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.150); */
+    /* margin: 5px; */
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
@@ -440,14 +627,74 @@ button i {
 }
 /* === MAIN | AKADEMIK END === */
 
-/* === MAIN | PROGRAM START === */
-.program {
+/* === MAIN | KEPSEK START === */
+.kepsek {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 5% 3% 5%;
+}
+.kepsek .kata-kepsek{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    color: var(--color-black-text);
+}
+.kepsek .card-kepsek{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #161623;
+    gap: 6px;
+    margin: 12px;
+    border: solid 1px var(--color-gray);
+    border-radius: 12px;
 }
-.program::before{
-    content: '';
+.kepsek .card-kepsek img{
+    margin-top: 12px;
+    width: 80%;
+}
+.kepsek .card-kepsek h3{
+    color: var(--color-primary);
+}
+.kepsek .card-kepsek p{
+    margin-bottom: 12px;
+}
+
+/*== MAIN | FASILITAS ==*/
+.fasilitas {
+    background-color: var(--color-primary);
+    padding: 35px 0 35px 0;
+}
+
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.15s ease-out, background 0.2s, box-shadow 0.3s;
+    z-index: 1000;
+    background: var(--color-secondary);
+    box-shadow: 0 0 10px var(--color-secondary), 0 0 30px var(--color-primary);
+}
+.cursor-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 250, 117, 0.296);
+    filter: blur(12px);
+    z-index: 999;
+    transition: transform 0.3s ease-out;
 }
