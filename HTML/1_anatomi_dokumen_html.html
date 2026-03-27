@@ -1,13 +1,88 @@
-<!DOCTYPE html> <!--Mengidentifikasi bahwa HTML versi 5.-->
+<!DOCTYPE html> <!--Deklarasi yang digunakan untuk memberitahu browser bahwa dokumen yang dibuat menggunakan HTML5.
+Kegunaan:
+1. Membantu browser menampilkan halaman dengan standar yang benar
+2. Menghindarai mode lama (quirks mode) yang bisa menyebabkan tampilan error
+3. Menjadi baris pertama wajib dalam file HTML
+-->
 <html> <!--Memberitahu Browser bahwa ia merupakan sebuah berkas HTML sekaligus menjadi root dari halaman web.-->
     <head> <!--Tempat penyimpanan informasi dari dokumen HTML.-->
-        <meta>
-        <title></title> 
-        <link rel="stylesheet" href="">
-        <style></style> 
+
+        <meta> 
+        <!--
+        Tag <meta> digunakan untuk memberikan informasi tambahan (metadata tentang halaman web kepada browser dan mesin pencari.
+        Kegunaan:
+        1. Menentukan karakter encoding (UTF-8)
+        2. Mengatur viweport (Agar responsif di HP)
+        3. SEO (Deksripsi halaman)
+        4. Informasi penulis, dll
+        -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Website belajar HTML">
+
+        <title></title>
+        <!--
+        Tag <title> menentukan judul halaman yang muncul di tab browser.
+        Kegunaan:
+        1. Indentitas halaman
+        2. Komponen penting SEO
+        3. Memudahkan pengguna mengenali tab
+        -->
+        <title>Belajar HTML Dasar</title>
+
+        <link rel="stylesheet" href=""> 
+        <!--
+        Tag <link> digunakan untuk menghubungkan dokumen HTML dengan file eksternal.
+        Kegunaan:
+        1. Menghubungkan file CSS
+        2. Menambahkan favicon (icon tab)
+        -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="logo.png">
+
+        <style></style>
+        <!--
+        Tag <style> digunakan untuk menulis CSS secara langsung di dokumen HTML (Internal CSS)
+        Kegunaan:
+        1. Mengatur tampilan halaman tanpa file CSS terpisah
+        -->
+        <style>
+            body {
+                background-color: lightblue;
+            }
+        </style>
+
         <script></script>
+        <!--
+        Tag <script> digunakan untuk memberikan kode JavaScript.
+        Kegunaan:
+        1. Membuat halaman interaktif
+        2. Validasi form
+        3. Animasi, dll
+        -->
+        <script>
+            alert("Halo Dunia!");
+        </script>
+
         <noscript></noscript>
+        <!--
+        Tag <noscript> digunakan untuk menampilkan pesan jika browser tidak mendukung JavaScript atau JavaScript dimatikan.
+        Kegunaan:
+        1. Memberi fallback agar user tetap mendapat informasi    
+        -->
+        <noscript>
+            Browser Anda tidak mendukung JavaScript.
+        </noscript>
+
         <base href="">
+        <!--
+        Tag <base> menentukan URL dasar untuk semua link relatif dalam halaman.
+        Kegunaan:
+        1. Mempermudah penulisan link
+        2. Menghidari pengulangan URL panjang
+        -->
+        <base href="https://example.com/">
+
     </head>
     <body> <!--Tempat menuliskan konten atau elemen yang akan ditampilkan di dalam web.-->
     </body>
