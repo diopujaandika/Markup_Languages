@@ -1,6 +1,24 @@
+.box{
+    margin: 6px;
+    border: solid 1px black;
+    border-radius: 6px;
+}
+
 .flex-direction-row{
     display: flex;
     flex-direction: row;
+}
+.flex-direction-row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flex-direction-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-direction-column-reverse{
+    display: flex;
+    flex-direction: column-reverse;
 }
 .container{
     border: 1px solid black;
