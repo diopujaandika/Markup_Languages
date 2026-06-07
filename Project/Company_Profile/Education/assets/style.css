@@ -72,6 +72,12 @@ i{
     font-size: 24px;
     border-radius: 24px;
 }
+img{
+    display: block;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
 .home{
     background-color: var(--color-primary);
     padding: 50px;
