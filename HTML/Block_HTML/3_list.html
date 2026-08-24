@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>List in HTML</title>
+        <title>HTML | List</title>
         <link rel="stylesheet" href="">
         <style></style>
         <script></script>
@@ -10,15 +10,35 @@
         <base href="">
     </head>
     <body>
-        <!--
-        Comment to List
-        1. <ol>
-        2. <ul>
-        3. <dl>
-        -->
-        <h1>List</h1> <!--Membuat list-->
+        <!--LIST-->
+        <h1>Elemen &lt;li&gt; </h1> <!--Membuat list-->
+        <p>Elemen &lt;li&gt; (tag list) adalah elemen HTML yang digunakan untuk membuat sebuah list pada halaman web.</p>
+        <p>Elemen &lt;li&gt; ini terdiri dari 3 macam list:</p>
+        <ol>
+            <li>Ordered List &lt;ol&gt;, digunakan untuk membuat list terurut berbentuk angka.</li>
+            <li>Unodered List &lt;ul&gt;, digunakan untuk membuat list tak terurut berbentuk bulletin.</li>
+            <li>Definition List &lt;dl&gt;, digunakan untuk membuat list yang dilengkapi dengan deskripsi atau definisi didalamnya.</li>
+        </ol>
 
-        <h2>Ordered List</h2>   <!--Ordered List digunakan untuk membuat list terurut, biasanya bentuknya dalam angka-->
+        <h2>Sintak Ordered List dan Unodered List</h2>
+        &lt;ol atau ul&gt;
+            &lt;li&gt; Isi Konten &lt;/li&gt;,
+        &lt;/ol atau /ul&gt; 
+
+        <h2>Sintak Definition List</h2>
+        &lt;dl&gt;
+            &lt;dt&gt; Judul list
+                &lt;dd&gt; Isi Konten &lt;/dd&gt;,
+            &lt;/dt&gt;,
+        &lt;/dl&gt; 
+
+        <p>Untuk membuat sebuah list kita harus menentukan terlebih dahulu jenis list apa yang sebaiknya kita gunakan sesuai dengan kasus dan kebutuhan kita, entah itu &lt;ol&gt; atau &lt;ul&gt;.</p>
+        <p>Selayaknya pada pembuatan elemen lainnya, membuat sebuah list diawali dengan sebuah tag pembuka &lt;ol, ul, dan dl&gt; dan diakhiri dengan sebuah tag penutup &lt;/ol, /ul, /dl&gt; </p>
+        <p>Kemudian didalam &lt;ol atau ul&gt; kita bisa menambahkan sebuah list yang dideklarasikan dengan elemen list yaitu &lt;li&gt; yang diawali dengan tag pembuka &lt;li&gt; dan diakhiri dengan tag pembuka &lt;/li&gt;. Di dalam tag list inilah kita dapat memberikan sebuah isi konten.</p>
+        <p>Khusus untuk &lt;dl&gt; kita tidak menggunakan  &lt;li&gt;, tetapi menggunakan  &lt;dt&gt; (data term) yang merupakan judul list dan didalamnya kita bisa menuliskan sebuah deskripsi isi list dengan memanfaatkan elemen &lt;dd&gt; (definition description) yang bisa kita sisipkan isi konten.</p>
+
+        <h2>Contoh</h2>
+        <h3>Ordered List</h3>   <!--Ordered List digunakan untuk membuat list terurut, biasanya bentuknya dalam angka-->
         <ol><!--List terurut-->
             <li>Langkah pertama</li>
             <li>Langkah kedua</li>
@@ -26,14 +46,14 @@
             <li>Langkah selanjutnya</li>
         </ol>
 
-        <h2>Unodered List</h2>  <!--Unodered List digunakan untuk membuat list tidak terurut, biasanya bentukan dalam bulletin.-->
+        <h3>Unodered List</h3>  <!--Unodered List digunakan untuk membuat list tidak terurut, biasanya bentukan dalam bulletin.-->
         <ul><!--List tidak terurut-->
             <li>List 1</li>
             <li>List 2</li>
             <li>List 3</li>
         </ul>
 
-        <h2>Definition List</h2>    <!--Definition List digunakan untuk membuat list yang diikuti dengan deskirpisi didalamnya.-->
+        <h3>Definition List</h3>    <!--Definition List digunakan untuk membuat list yang diikuti dengan deskirpisi didalamnya.-->
         <dl><!--List yang memiliki deskripsi-->
             <dt>List 1</dt>                         <!--Definition Term adalah Judul List-->
             <dd>Ini adalah deskripsi list 1</dd>    <!--Definition Description adalah Deskripsi List -->
