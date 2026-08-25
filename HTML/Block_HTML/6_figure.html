@@ -2,53 +2,89 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Figure in HTML</title>
+        <title>HTML | Figure</title>
     </head>
     <body>
       <!--Commment to Figure-->
-        <h1>Figure</h1>
-        <p>Elemen figure digunakan untuk mempresentasikan konten tersendiri atau self-contained content. Seperti ilustrasi, diagram, foto, atau bisa juga sebuah baris kode. Terdapat elemen tambahan untuk membuat capstion atau judul dalam sebuah figure yaitu figcaption.</p>
-        <figure> <!--Mepresentasikan konten tersendiri, seperti ilustrasi, diagram, foto, atau bisa juga sebuah baris kode.-->
-          <h2>Ilustrasi</h2>
-          <p>Ilustrasi adalah Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui impedit est culpa error ducimus praesentium quidem eos non suscipit atque odit, deleniti nemo esse aliquam? Doloremque distinctio blanditiis quisquam!</p>
-          
-          <figure>
-            <h3>Foto</h3>
-            <img src="https://raw.githubusercontent.com/dicodingacademy/a123-webdasar-labs/099-shared-files/shared-media/g-dicoding-logo.png" alt="Dicoding Logo" width="200px" name="logo dicoding">
-            <figcaption>Dicoding</figcaption>
-          </figure>
-        </figure>
-        <figure>
-          <h2>Diagram</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit accusamus rerum. Voluptatem iusto quae amet sed adipisci. Sit excepturi earum temporibus aliquam. Ducimus quos voluptate totam illo quas itaque.</p>
-          <figure>
-            <h3>Baris Code</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aut suscipit autem in assumenda magnam, sapiente explicabo aperiam dicta! Molestias illum dicta enim commodi debitis sapiente placeat in praesentium ut.</p>
-            <figcaption>Code</figcaption> <!--Digunakan sebagai caption (judul) sebuah figure-->
-          </figure>
-        </figure>
+      <main>
+        <header>
+          <h1>Elemen Figure | &lt;figure&gt;</h1>
+        </header>
+        <article>
+          <h2>Pengertian</h2>
+          <p>Elemen figure (&lt;figure&gt;) adalah elemen HTML yang khusus digunakan untuk mempresentasikan konten tersendiri (self-contained content), seperti ilustrasi, diagram, foto, atau bisa juga sebuah baris kode.</p>
+        </article>
+        <article>
+          <h2>Kegunaan</h2>
+          <ul>
+            <li>Digunakan untuk menampilkan konten tersendiri.</li>
+            <li>Dapat digunakan untuk mengemlompokkan blok konten.</li>
+            <li>Dapat memposisikan block konten utama tanpa mempengaruhi dari induk konten.</li>
+          </ul>
+        </article>
+        <article>
+          <h2>Sintak</h2>
+          <pre><code>
+            &lt;figure&gt;
+                &lt;img src="..." alt="..."&gt;
+                &lt;p&gt;description&lt;/p&gt;
+                &lt;figcaption&gt;Judul Figure&lt;/figcaption&gt;
+            &lt;figure&gt;
+          </code></pre>
+          <ul>
+            <li>Terdiri dari tag pembuka &lt;&gt; dan tag penutup &lt;/&gt;.</li>
+            <li>Menggunakan kata figure untuk mendeklarasikan figure.</li>
+            <li>Terdapat sebuah tag spesial untuk figure yaitu &lt;figcaption&gt; yang digunakan untuk memberikan sebuah caption (judul) untuk konten tersebut.</li>
+            <li>Elemen ini bertipe block sehingga elemen setelahnya akan berada dibawah elemen ini.</li>
+          </ul>
+        </article>
+        <article>
+          <h2>Contoh</h2>
+            <h1>Figure</h1>
+            <p>Elemen figure digunakan untuk mempresentasikan konten tersendiri atau self-contained content. Seperti ilustrasi, diagram, foto, atau bisa juga sebuah baris kode. Terdapat elemen tambahan untuk membuat capstion atau judul dalam sebuah figure yaitu figcaption.</p>
+            <figure> <!--Mepresentasikan konten tersendiri, seperti ilustrasi, diagram, foto, atau bisa juga sebuah baris kode.-->
+            <h2>Ilustrasi</h2>
+            <p>Ilustrasi adalah Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus qui impedit est culpa error ducimus praesentium quidem eos non suscipit atque odit, deleniti nemo esse aliquam? Doloremque distinctio blanditiis quisquam!</p>
+                
+                <figure>
+                  <h3>Foto</h3>
+                  <img src="https://raw.githubusercontent.com/dicodingacademy/a123-webdasar-labs/099-shared-files/shared-media/g-dicoding-logo.png" alt="Dicoding Logo" width="200px" name="logo dicoding">
+                  <figcaption>Dicoding</figcaption>
+                </figure>
+              </figure>
+              <figure>
+                <h2>Diagram</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit accusamus rerum. Voluptatem iusto quae amet sed adipisci. Sit excepturi earum temporibus aliquam. Ducimus quos voluptate totam illo quas itaque.</p>
+                <figure>
+                  <h3>Baris Code</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aut suscipit autem in assumenda magnam, sapiente explicabo aperiam dicta! Molestias illum dicta enim commodi debitis sapiente placeat in praesentium ut.</p>
+                  <figcaption>Code</figcaption> <!--Digunakan sebagai caption (judul) sebuah figure-->
+                </figure>
+              </figure>
 
-        <figure>
-          <h2>Puisi</h2>
-          <pre>
-            SAJAK PUTIH
+              <figure>
+                <h2>Puisi</h2>
+                <pre>
+                  SAJAK PUTIH
 
-              Bersandar pada tari warna pelangi
-              Kau depanku bertudung sutra senja
-              Di hitam matamu kembang mawar dan melati
-              Harum rambutmu mengalun bergelut senda
+                    Bersandar pada tari warna pelangi
+                    Kau depanku bertudung sutra senja
+                    Di hitam matamu kembang mawar dan melati
+                    Harum rambutmu mengalun bergelut senda
 
-              Sepi menyanyi, malam dalam mendoa tiba
-              Meriak muka air kolam jiwa
-              Dan dalam dadaku memerdu lagu
-              Menarik menari seluruh aku
+                    Sepi menyanyi, malam dalam mendoa tiba
+                    Meriak muka air kolam jiwa
+                    Dan dalam dadaku memerdu lagu
+                    Menarik menari seluruh aku
 
-              Hidup dari hidupku, pintu terbuka
-              Selama matamu bagiku menengadah
-              Selama kau darah mengalir dari luka
-              Antara kita Mati datang tidak membelah...
-          </pre>
-          <figcaption>Sajak Putih karya Charil Anwar</figcaption>
-        </figure>
+                    Hidup dari hidupku, pintu terbuka
+                    Selama matamu bagiku menengadah
+                    Selama kau darah mengalir dari luka
+                    Antara kita Mati datang tidak membelah...
+                </pre>
+                <figcaption>Sajak Putih karya Charil Anwar</figcaption>
+              </figure>
+        </article>
+      </main>
     </body>
 </html>

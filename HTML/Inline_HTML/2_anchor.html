@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Anchor In HTML</title>
+        <title>HTML | Anchor</title>
         <link rel="stylesheet" href="">
         <style></style>
         <base href="">
@@ -10,17 +10,53 @@
         <noscript></noscript>
     </head>
     <body>
-        <!--Comment to Anchor-->
-        <!--Anchor adalah sebuah hyperlink yang digunakan untuk menautkan suatu tautan halaman. Gunakan tag a, yang dilengkapi dengan atribut href dan target.-->
-        <h1>Anchor</h1>
-        <p>Elemen anchor digunakan untuk membuat sebuah hyperlink ke halaman atau website lain, flie, alamat email, atau URL lainnya.</p>
-        <a href="https://..." target="_blank">Website</a>
-        <a href="https://..." target="_parent">Website</a>
-        <a href="https://..." target="_self">Website</a>
-        <a href="https://..." target="_top">Website</a>
+        <main>
+            <header><h1>Elemen Anchor | &lt;a&gt;</h1></header>
+            <aritcle>
+                <h2>Pengertian</h2>
+                <p>Elemen anchor (&lt;a&gt;) adalah elemen HTML yang digunakan untuk membuat sebuah hyperlink ke halaman atau website lain, file, alamat email, atau URL lainnya.</p>
+            </aritcle>
+            <aritcle>
+                <h2>Kegunaan</h2>
+                <ul>
+                    <li>Membuat halaman web kita tertaut ke halaman atau website lain, file, alamat email, atau URL lainnya.</li>
+                    <li>Dapat digunakan sebagai interaktivitas dalam membuat navigasi halaman web.</li>
+                </ul>
+            </aritcle>
+            <aritcle>
+                <h2>Sintak</h2>
+                <code>
+                    &lt;a href="alamat yang dituju"&gt; Nama Tujuan &lt;/a&gt;
+                </code>
+                <section>
+                    <h3>Keterangan</h3>
+                    <ol>
+                         <li>Terdiri dari tag pembuka &lt;&gt; dan tag penutup &lt;/&gt;.</li>
+                        <li>Menggunakan huruf a untuk mendeklarasikan anchor.</li>
+                        <li>Elemen ini bertipe inline sehingga elemen setelahnya akan berada samping elemen ini, kecuali elemen-elemen yang bersifat block.</li>
+                        <li>Terdapat 2 atribut yang umum digunakan yaitu: 
+                            <ul>
+                                <li>href="..." digunakan mentapkan sebuah target yang dituju.</li>
+                                <li>target="..." digunakan untuk bagaimana alamat target yang dituju mau ditampilkan.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+            </aritcle>
+            <aritcle>
+                <h2>Contoh</h2>
+                <p>&lt;a href="https://..." target="_blank"&gt;Website&lt;/a&gt;</p>
+                <a href="https://..." target="_blank">Website</a>
 
-        <a href="mailto:info@example.com">Email</a>
-        <a href="tel:+6281271028744">Telepon</a>
-        <a href="#address">Alamat</a>
+                <p>&lt;a href="mailto:info@example.com"&gt;Email&lt;/a&gt;</p>
+                <a href="mailto:info@example.com">Email</a>
+
+                <p>&lt;a href="tel:+6281271028744"&gt;Telepon&lt;/a&gt;</p>
+                <a href="tel:+6281271028744">Telepon</a>
+
+                <p>&lt;a href="#address"&gt;Alamat&gt;/a&gt;</p>
+                <a href="#address">Alamat</a>
+            </aritcle>
+        </main>        
     </body>
 </html>
