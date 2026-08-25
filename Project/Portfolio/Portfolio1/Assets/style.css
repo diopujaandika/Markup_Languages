@@ -1,7 +1,11 @@
+:root {
+    --font1: "Urbanist", sans-serif;
+    --font2: "Righteous", sans-serif;
+}
 *{
     margin: 0;
+    font-family: var(--font2) ;
 }
-
 header{
     display: flex;
     flex-direction: row;
