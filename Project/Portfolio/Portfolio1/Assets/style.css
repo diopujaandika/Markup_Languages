@@ -1,10 +1,11 @@
 :root {
-    --font1: "Urbanist", sans-serif;
-    --font2: "Righteous", sans-serif;
+    --font1: "Google-Sans", sans-serif;
+    --font2: "Urbanist", sans-serif;
+    --font3: "Righteous", sans-serif;
 }
 *{
     margin: 0;
-    font-family: var(--font2) ;
+    font-family: var(--font2);
 }
 header{
     display: flex;

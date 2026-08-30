@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    font-family: "Google Sans", sans-serif;
+}
+:root {
+    /* === Ukuran Teks === */
+    --teks-besar: 36px;
+    --teks-sedang: 16px;
+    --teks-kecil: 14px;
+
+    /* === Warna Teks === */
+    --hitam: #252525;
+    --abu-abu: #545454;
+    --transparan: #f3f3f3;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 18px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+h1{
+    font-size: var(--teks-besar);
+}
+p{
+    color: var(--hitam);
+    font-size: var(--deskripsi);
+}
+h2{
+    margin-bottom: 8px;
+}
+.modified p{
+    color: var(--abu-abu);
+    font-size: var(--teks-kecil);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100vh ;
+}
+.code{
+    background-color: var(--transparan);
+    padding: 24px;
+    border-radius: 8px;
+}
