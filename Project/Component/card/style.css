@@ -1,117 +1,208 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-body{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#111827;
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-.container{
-    width:700px;
+.card-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.timeline{
-    position:relative;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+/* Base Card Styling */
+.card {
+  width: 280px;
+  height: 440px;
+  background-color: #ffffff;
+  border-radius: 28px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.line{
-    position:absolute;
-    width:100%;
-    height:4px;
-    background:#374151;
-    top:20px;
-    z-index:1;
-    overflow:hidden;
-    border-radius:10px;
+.image-wrapper {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.progress{
-    height:100%;
-    width:0%;
-    background:#3b82f6;
-    transition:0.4s ease;
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.step{
-    position:relative;
-    z-index:2;
-    text-align:center;
-    color:white;
+.card-content {
+  padding: 16px 8px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  z-index: 2;
 }
 
-.circle{
-    width:40px;
-    height:40px;
-    border-radius:50%;
-    background:#374151;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin-bottom:10px;
-    transition:0.3s;
+.header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.step.active .circle{
-    background:#3b82f6;
-    transform:scale(1.15);
-    animation:pop 0.4s ease;
-    box-shadow:0 0 20px rgba(59,130,246,0.7);
+.header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
 }
 
-.step.active p{
-    color:#3b82f6;
+.verified-icon.green {
+  color: #10b981;
+  font-size: 1.1rem;
 }
 
-.buttons{
-    margin-top:50px;
-    display:flex;
-    justify-content:center;
-    gap:20px;
+.verified-icon.white {
+  color: #ffffff;
+  font-size: 1.1rem;
 }
 
-button{
-    padding:10px 20px;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-    background:#3b82f6;
-    color:white;
-    font-size:16px;
-    transition:0.3s;
+.bio {
+  font-size: 0.85rem;
+  color: #666;
+  line-height: 1.4;
+  margin-top: 6px;
 }
 
-button:hover{
-    transform:translateY(-2px);
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
 }
 
-button:active{
-    transform:scale(0.95);
+.stats {
+  display: flex;
+  gap: 12px;
 }
 
-@keyframes pop {
+.stats span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
 
-    0%{
-        transform:scale(0.5);
-        opacity:0.5;
-    }
+.btn-follow {
+  background-color: #f3f4f6;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: background-color 0.2s;
+}
 
-    70%{
-        transform:scale(1.25);
-        opacity:1;
-    }
+.btn-follow:hover {
+  background-color: #e5e7eb;
+}
 
-    100%{
-        transform:scale(1.15);
-    }
+/* Glassmorphism Styles (Cards 2 & 3) */
+.card-glass-light,
+.card-glass-dark {
+  padding: 0;
+}
 
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-glass-light .card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 20px;
+
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 30%);
+}
+
+.card-glass-dark .card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 20px;
+
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 25%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 25%);
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-light {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark-btn {
+  background-color: #ffffff;
+  color: #111;
+}
+
+.dark-btn:hover {
+  background-color: #f3f4f6;
+}
+
+/* Style Tambahan untuk Status Following */
+.btn-follow.following {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.btn-follow.following:hover {
+  background-color: #059669;
+}
+
+/* Penyesuaian tombol following pada dark card */
+.card-glass-dark .btn-follow.following {
+  background-color: #10b981;
+  color: #ffffff;
 }

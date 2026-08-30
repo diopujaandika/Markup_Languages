@@ -1,42 +1,32 @@
-const steps = document.querySelectorAll(".step");
-const nextBtn = document.getElementById("next");
-const prevBtn = document.getElementById("prev");
-const progress = document.querySelector(".progress");
+document.addEventListener('DOMContentLoaded', () => {
+  const followButtons = document.querySelectorAll('.btn-follow');
 
-let current = 0;
+  followButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Mengambil elemen stats terdekat dari tombol yang diklik
+      const statsContainer = button.closest('.footer').querySelector('.stats span:first-child');
+      let currentFollowers = parseInt(statsContainer.textContent.trim());
 
-nextBtn.addEventListener("click", () => {
+      // Cek apakah user sudah di-follow
+      const isFollowing = button.classList.contains('following');
 
-    if(current < steps.length - 1){
-        current++;
-        updateTimeline();
-    }
-
-});
-
-prevBtn.addEventListener("click", () => {
-
-    if(current > 0){
-        current--;
-        updateTimeline();
-    }
-
-});
-
-function updateTimeline(){
-
-    steps.forEach((step, index) => {
-
-        if(index <= current){
-            step.classList.add("active");
-        }else{
-            step.classList.remove("active");
-        }
-
+      if (isFollowing) {
+        // Unfollow action
+        button.classList.remove('following');
+        button.innerHTML = 'Follow <i class="ri-add-line"></i>';
+        
+        // Kurangi jumlah follower
+        currentFollowers -= 1;
+        statsContainer.innerHTML = `<i class="ri-user-line"></i> ${currentFollowers}`;
+      } else {
+        // Follow action
+        button.classList.add('following');
+        button.innerHTML = 'Following <i class="ri-check-line"></i>';
+        
+        // Tambah jumlah follower
+        currentFollowers += 1;
+        statsContainer.innerHTML = `<i class="ri-user-line"></i> ${currentFollowers}`;
+      }
     });
-
-    const percent = (current / (steps.length - 1)) * 100;
-
-    progress.style.width = percent + "%";
-
-}
+  });
+});
