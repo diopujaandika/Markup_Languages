@@ -4,48 +4,103 @@
 }
 :root {
     /* === Ukuran Teks === */
-    --teks-besar: 36px;
+    --teks-besar: 42px;
     --teks-sedang: 16px;
     --teks-kecil: 14px;
 
     /* === Warna Teks === */
     --hitam: #252525;
-    --abu-abu: #545454;
-    --transparan: #f3f3f3;
+    --putih: #fdfcf9;
+    --abu-abu: #727272;
+    --transparan: #d5d5d5;
+}
+body{
+    background-color: #fdfcf9;
 }
 main{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    margin: 18px;
+    margin: 2% 20%;
 }
+
 header{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: var(--transparan) 1px solid;
 }
-h1{
-    font-size: var(--teks-besar);
-}
-p{
-    color: var(--hitam);
-    font-size: var(--deskripsi);
-}
-h2{
-    margin-bottom: 8px;
-}
-.modified p{
+button{
+    width: fit-content;
+    font-size: var(--teks-sedang);
     color: var(--abu-abu);
-    font-size: var(--teks-kecil);
+    background-color: var(--putih);
+    border: var(--transparan) 1px solid;
+    border-radius: 32px;
+    font-weight: 300;
+    padding: 6px 12px;
 }
-.container{
+.heading{
+    display: flex;
+    flex-direction: row;
+}
+.heading-content{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 100vh ;
+}
+.heading-image{
+    width: 200px;
+    height: 150px;
+    background-color: var(--transparan);
+    border-radius: 12px;
+}
+h1{
+    width: fit-content;
+    font-size: var(--teks-besar);
+    word-spacing: 2px;
+}
+h2{
+    width: fit-content;
+    color: var(--abu-abu);
+    border: 1px solid var(--transparan);
+    border-bottom: none;
+    border-radius: 12px 12px 0px 0px;
+    padding: 6px 8px;
+}
+h3,li{
+    width: fit-content;
+    color: var(--abu-abu);
+    margin: 6px;
+}
+p{
+    color: var(--abu-abu);
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+.category{
+    font-size: var(--teks-kecil);
+    word-spacing: 2px;
+    color: var(--abu-abu);
+}
+section{
+    padding: 12px;
+    /* border: var(--transparan) 1px solid; */
+    border-radius: 12px;
+}
+.description{
+    /* width: fit-content; */
+    color: var(--abu-abu);
+    border: 1px solid var(--transparan);
+    border-radius: 0px 12px 12px 12px;
+    padding: 6px 8px;
 }
 .code{
+    /* width: fit-content; */
+    color: var(--transparan);
+    padding: 12px;
     background-color: var(--transparan);
-    padding: 24px;
-    border-radius: 8px;
+    margin-top: 2px;
+    border-radius: 6px;
 }
