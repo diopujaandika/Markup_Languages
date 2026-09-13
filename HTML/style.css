@@ -51,6 +51,9 @@ button{
     gap: 1rem;
 }
 .heading-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 150px;
     background-color: var(--transparan);
@@ -86,21 +89,27 @@ p{
 }
 section{
     padding: 12px;
-    /* border: var(--transparan) 1px solid; */
     border-radius: 12px;
 }
 .description{
-    /* width: fit-content; */
     color: var(--abu-abu);
     border: 1px solid var(--transparan);
     border-radius: 0px 12px 12px 12px;
     padding: 6px 8px;
 }
 .code{
-    /* width: fit-content; */
-    color: var(--transparan);
+    color: var(--hitam);
     padding: 12px;
     background-color: var(--transparan);
     margin-top: 2px;
     border-radius: 6px;
+}
+.code p{
+    font-size: var(--teks-sedang);
+    font-weight: bold
+}
+.example h2, h3{
+    border: none;
+    margin: 0;
+    padding: 0;
 }

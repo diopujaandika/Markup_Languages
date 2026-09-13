@@ -2,67 +2,82 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Titile Web Page-->
         <title>HTML | Heading</title>
-        <link rel="stylesheet" href="">
-        <style></style>
-        <base href="">
-        <script></script>
-        <noscript></noscript>
+        <!--Link -->
+        <link rel="stylesheet" href="../style.css">
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     </head>
     <body>
         <main>
             <header>
+                <button><i class="ri-arrow-left-circle-line"></i>Katalog</button>
+                <div class="heading">
+                    <div class="heading-content">
+                        <p><i class="ri-edit-line"></i>HTML | Heading</p>
+                        <h1>Membuat judul menggunakan elemen <span>&lt;h&gt;</span></h1>
+                        <div class="category">
+                            <p><span><i class="ri-github-fill"></i><a href="" target="_blank">Halaman edit</a></span> Terakhir diperbarui: September 13, 2026</p>
+                        </div>
+                    </div>
+                    <div class="heading-image">
+                        <h1>&lt;h&gt;</h1>
+                    </div>
+                </div>
             </header>
-            <article class="definition">
-                <div class="title"></div>
-                <div class="description"></div>
-            </article>
-            <article class="utility">
-                <div class="title"></div>
-                <div class="description"></div>
-            </article>
-            <article class="syntax">
-                <div class="title"></div>
-                <section class="code">
-                    <div class="subtitle"></div>
-                    <div class="description"></div>
+            <article class="content">
+                <!--Definition Section-->
+                <section class="definition">
+                    <h2>Definisi</h2>
+                    <div class="description">
+                        <p>Elemen Heading (tag heading) adalah salah satu elemen HTML yang digunakan untuk mendeklarasikan sebuah judul atau sub judul pada suatu halaman web. Elemen paragraph bertipe <b>block</b> sehingga elemen setelahnya akan berada di bawah elemen ini.</p>
+                    </div>
                 </section>
-                <section class="explanation">
-                    <div class="subtitle"></div>
-                    <div class="description"></div>
+                <!--Utility Section-->
+                <section class="utility">
+                    <h2>Kegunaan</h2>
+                    <div class="description">
+                        <p>Elemen paragraph digunakan untuk mendeklarasikan sebuah paragaraf, teks, deskripsi, informasi, atau keterangan pada halaman web.</p>
+                    </div>
                 </section>
-            </article>
-            <article class="example">
-                <section class="code">
-                    <div class="subtitle"></div>
-                    <div class="description"></div>
+                <!--Syntax Section-->
+                <section class="syntax">
+                    <h2>Sintak</h2>
+                    <div class="description">
+                        <div class="code">
+                            <p>&lt;h1...h6&gt;Judul&lt;/h1...h6&gt;</p>
+                        </div>
+                        <div class="explanation">
+                            <h3>Keterangan</h3>
+                            <div>
+                                <ul>
+                                    <li>Elemen &lt;h&gt; dibuka dengan sebuah tag pemuka &lt;&gt; dan diakhiri dengan sebuah tag penutup &lt;/&gt; dengan huruf h sebagai deklarasi yang merepresentasikan heading</li>
+                                    <li>Elemen &lt;h&gt; terdiri dari &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, hingga &lt;h6&gt;.</li>
+                                    <li>Semakin kecil angka maka semakin besar judul yang akan dibuat.</li>
+                                    <li>Menariknya elemen &lt;h1&gt; selain digunakan sebagai judul utama, elemen ini mempengaruhi SEO dari sebuah halaman web di browser.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-                <section class="result">
-                    <div class="subtitle"></div>
-                    <div class="description"></div>
+                <section class="example">
+                    <h2>Contoh</h2>
+                    <div class="description">
+                        <h1>&lt;h1&gt;Heading 1&lt;/h1&gt;</h1>
+                        <h2>&lt;h2&gt;Heading 2&lt;/h2&gt;</h2>
+                        <h3>&lt;h3&gt;Heading 3&lt;/h3&gt;</h3>
+                        <h4>&lt;h4&gt;Heading 4&lt;/h4&gt;</h4>
+                        <h5>&lt;h5&gt;Heading 5&lt;/h5&gt;</h5>
+                        <h6>&lt;h6&gt;Heading 6&lt;/h6&gt;</h6>
+                    </div>
                 </section>
             </article>
         </main>
-        <!--HEADING-->
-        <h1>Elemen &lt;h&gt; </h1>
-        <p>Elemen &lt;h&gt; (tag heading) digunakan untuk membuat sebuah judul dan sub judul pada suatu konten halaman web.</p>
-        <p>Elemen &lt;h&gt; bertipe block sehingga elemen berikutnya akan berada di garis baru setelahnya.</p>
-
-        <h2>Sintak</h2>
-        <p>&lt;h1...h6&gt;Judul&lt;/h1...h6&gt;</p>
-        <p>Elemen &lt;h&gt; dibuka dengan sebuah tag pemuka &lt;&gt; dan diakhiri dengan sebuah tag penutup &lt;/&gt; dengan huruf h sebagai deklarasi yang merepresentasikan heading</p>
-        <p>Elemen &lt;h&gt; terdiri dari &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, hingga &lt;h6&gt;.</p>
-        <p>Semakin kecil angka maka semakin besar judul yang akan dibuat.</p>
-        <p>Menariknya elemen &lt;h1&gt; selain digunakan sebagai judul utama, elemen ini mempengaruhi SEO dari sebuah halaman web di browser.</p>
-
-        <h2>Contoh</h2>
-        <h1>&lt;h1&gt;Heading 1&lt;/h1&gt;</h1>
-        <h2>&lt;h2&gt;Heading 2&lt;/h2&gt;</h2>
-        <h3>&lt;h3&gt;Heading 3&lt;/h3&gt;</h3>
-        <h4>&lt;h4&gt;Heading 4&lt;/h4&gt;</h4>
-        <h5>&lt;h5&gt;Heading 5&lt;/h5&gt;</h5>
-        <h6>&lt;h6&gt;Heading 6&lt;/h6&gt;</h6>
-
-        <p> Ingat semakin besar angka pada heading 1 - 6 maka semakin kecil judul yang akan disuaikan.</p>
     </body>
 </html>
+        
