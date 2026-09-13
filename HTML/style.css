@@ -41,6 +41,10 @@ button{
     font-weight: 300;
     padding: 6px 12px;
 }
+button:hover{
+    color: var(--hitam);
+    background-color: var(--transparan);
+}
 .heading{
     display: flex;
     flex-direction: row;
@@ -108,7 +112,7 @@ section{
     font-size: var(--teks-sedang);
     font-weight: bold
 }
-.example h2, h3{
+.description h2, h3{
     border: none;
     margin: 0;
     padding: 0;
