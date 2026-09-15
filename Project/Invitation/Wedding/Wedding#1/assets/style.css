@@ -8,6 +8,7 @@
 body {
     font-size: 1.2rem;
     font-family: 'Google font', sans-serif;
+    min-height: 2000px;
 }
 .hero::before {
     content: '';
@@ -18,9 +19,11 @@ body {
     height: 100%;
     background-image: url("images/weddinghero1.png");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;   
     z-index: -1;
     filter: blur(2px) grayscale(50%);
+
 }
 .hero {
     position: relative;
@@ -37,6 +40,7 @@ body {
     font-size: 1.2rem;
     font-weight: 400;
     text-shadow: var(--shadow);
+    margin-bottom: 24px;
 }
 .hero p {
     font-size: 1.2rem;
