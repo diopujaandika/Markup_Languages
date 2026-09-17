@@ -12,16 +12,14 @@ h2, h3 {
     text-transform: uppercase;
 }
 
-nav {
+footer {
+    padding: 20px;
+    color: white;
     background-color: #00a2c6;
-    padding: 5px;
+    text-align: center;
+    font-weight: bold;
 }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
-    list-style-type: none;
-}
 nav a {
     font-size: 18px;
     font-weight: 400;
@@ -69,6 +67,24 @@ main {
     color: white;
 }
 
+nav {
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+main{
+    padding: 20px;
+    overflow: auto;
+}
+
 #content {
     float: left;
     width: 75%;
@@ -80,10 +96,6 @@ aside {
     padding-left: 25px;
 }
 
-footer {
-    padding: 20px;
-    color: white;
-    background-color: #00a2c6;
-    text-align: center;
-    font-weight: bold;
+header{
+    display: inline;
 }
