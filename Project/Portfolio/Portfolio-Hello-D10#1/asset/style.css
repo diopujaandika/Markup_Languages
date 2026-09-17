@@ -63,6 +63,14 @@ header {
   z-index: 1000;
   box-shadow: 0 10px 30px var(--color-shadow);
 }
+header .menu-icon {
+  display: none;
+  border: none;
+  background: var(--color-white1);
+  font-size: 1.8rem;
+  color: var(--color-black);
+  cursor: pointer;
+}
 header nav{
   display: flex;
   flex-direction: row;
@@ -77,14 +85,6 @@ header nav ul{
 }
 header nav ul li a{
   color: var(--color-black);
-}
-header .hamburger {
-  display: none;
-  border: none;
-  background: var(--color-white3);
-  font-size: 1.8rem;
-  color: var(--color-black);
-  cursor: pointer;
 }
 
 /*MAIN*/
@@ -180,7 +180,50 @@ main {
   margin-left: 20%;
   border-radius: 28px;
   padding: 12px;
-  width: 1200px;
   height: 100vh;
   background-color: var(--color-white1);
+}
+
+/*MEDIA QUERY*/
+/*Laptop*/
+@media (max-width : 992px) {
+    html{
+        font-size: 75%;
+    }
+}
+/*Tablet*/
+@media (max-width : 768px) {
+    html{
+        font-size: 65%;
+    }
+    header{
+      flex-wrap: wrap ;
+      width: 100%;
+    }
+    header .menu-icon{
+      display: block;
+    }
+    header nav {
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--color-white1);
+      flex-direction: column;
+      gap: 2rem;
+      padding: 20px;
+    }
+    header .hidden {
+      display: none;
+    }
+    header nav ul{
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+}
+/*Mobilephone*/
+@media (max-width : 576px) {
+    html{
+        font-size: 60%;
+    }
 }
