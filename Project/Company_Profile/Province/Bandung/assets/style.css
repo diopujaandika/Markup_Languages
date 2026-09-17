@@ -3,19 +3,24 @@ body {
 }
 
 h2, h3 {
-    color: #00a2c6
+    color: #00a2c6;
+    text-transform: uppercase;
 }
 
-footer {
-    padding: 20px;
-    color: white;
+nav {
     background-color: #00a2c6;
+    padding: 5px;
 }
-
+nav li {
+    display: inline;
+    margin-right: 20px;
+    list-style-type: none;
+}
 nav a {
     font-size: 18px;
     font-weight: 400;
     text-decoration: none;
+    color: white;
 }
 
 nav a:hover {
@@ -26,7 +31,34 @@ nav a:hover {
     text-align: center;
 }
 
-footer{
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 16px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+}
+
+footer {
     padding: 20px;
     color: white;
     background-color: #00a2c6;
