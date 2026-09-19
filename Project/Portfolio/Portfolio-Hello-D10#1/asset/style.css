@@ -20,13 +20,26 @@
 
 body{
   background-color: var(--color-white2);
-  min-height: 100vh;
   justify-content: center;
-  min-height: 4000px;
 }
 
 a{
   text-decoration: none;
+  color: var(--color-black);
+}
+a:hover{
+  color: var(--color-green);
+}
+p{
+  color: var(--color-gray1);
+}
+span {
+  width: fit-content;
+  font-size: 16px;
+  padding: 6px 8px;
+  align-items: center;
+  background-color: var(--color-white3);
+  border-radius: 100px;
 }
 
 .btn1{
@@ -43,7 +56,7 @@ a{
   gap: 4px;
 }
 .btn1:hover{
-  background-color: var(--color-primary);
+  background-color: var(--color-green);
   color: var(--color-white1);
 }
 .btn2{
@@ -60,8 +73,19 @@ a{
   gap: 4px;
 }
 .btn2:hover{
-  background-color: var(--color-black);
+  border: 1px solid var(--color-green);
+  background-color: var(--color-green);
   color: var(--color-white1);
+}
+
+.box{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  background-color: var(--color-white1);
+  border-radius: 22px;
+  padding: 24px;
 }
 
 /*HEADER*/
@@ -105,7 +129,7 @@ header nav ul li a{
   padding: 2px;
 }
 header nav ul li a:hover{
-  color: var(--color-primary);
+  color: var(--color-green);
 }
 
 /*MAIN*/
@@ -118,7 +142,7 @@ main {
 .card-profile {
   width: 280px;
   min-width: 280px;
-  height: 420px;
+  height: 430px;
   background-color: var(--color-white1);
   border-radius: 28px;
   padding: 12px;
@@ -197,23 +221,26 @@ main {
 .content{
   display: flex;
   flex-direction: column;
+  gap: 12px;
   margin-left: 19.5%;
-  border-radius: 28px;
-  padding: 12px;
-  background-color: var(--color-white1);
 }
+/*Home*/
 .content .home {
   width: 100%;
   display: flex;
   flex-direction: column;
+  border-radius: 28px;
+  padding: 12px;
   gap: 1.5rem;
-  padding: 32px 12px 12px 12px;
+  padding: 40px 12px 32px 12px;
   text-align: center;
   justify-content: center;
+  background-color: var(--color-white1);
 }
 .content .home h1{
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 100;
+  margin: 0px 40px;
 }
 .content .home .description{
   color: var(--color-gray1);
@@ -222,39 +249,58 @@ main {
   gap: 0.8rem;
 }
 .content .home .action-button{
-  margin: 20px 0;
-  padding: 10px 0 50px 0;
   display: flex;
   gap: 1rem;
   flex-direction: row;
   justify-content: center;
-  border-bottom: 1px solid var(--color-white3);
 }
 .content .home .status-available{
-  margin-bottom: 10px;
-  padding: 2px 4px;
+  display: flex;
+  padding: 2px 6px 2px 4px;
   border-radius: 22px;
   border: 1px solid var(--color-gray1);
   width: fit-content;
   align-self: center;
   color: var(--color-gray1);
 }
+.content .home .status-available p{
+    font-size: 0.85rem;
+}
 .content .home .status-available .available.green{
   color: var(--color-green);
   font-size: 1.1rem;
 }
-.content .home .education{
-  margin-top: -20;
+.content .home .stats{
   display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: center;
+  /* border: 1px solid var(--color-black); */
 }
-.content .home .education .logo{
-  background-color: var(--color-white3);
-  border: 1px solid var(--color-white3);
-  border-radius: 4px;
-  padding: 4px;
+/*Aboutme*/
+.content .aboutme {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
-.content .home .education .logo img{
-  width: 40px;
+.content .aboutme .description{
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 2.5;
+  gap: 1rem;
+}
+
+
+/*FOOTER*/
+footer{
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+footer p{
+    color: var(--color-white3) !important;
 }
 
 /*MEDIA QUERY*/
@@ -279,8 +325,14 @@ main {
     main .content{
       margin-left: 30%;
     }
-    .content .home h1{
-      font-size: 45px;
+    main .content .home h1{
+      font-size: 25px;
+    }
+    main .content .aboutme{
+      flex-direction: column;
+    }
+    main .content .aboutme .box{
+      padding: 16px;
     }
 }
 /*Tablet*/
