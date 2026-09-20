@@ -17,10 +17,19 @@
     --color-gray1: #666;
     --color-gray2: #333;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body{
   background-color: var(--color-white2);
   justify-content: center;
+}
+
+#home,
+#aboutme,
+#experience {
+    scroll-margin-top: 70px;
 }
 
 a{
@@ -254,7 +263,7 @@ main {
   flex-direction: row;
   justify-content: center;
 }
-.content .home .status-available{
+.status-available{
   display: flex;
   padding: 2px 6px 2px 4px;
   border-radius: 22px;
@@ -263,10 +272,10 @@ main {
   align-self: center;
   color: var(--color-gray1);
 }
-.content .home .status-available p{
+.status-available p{
     font-size: 0.85rem;
 }
-.content .home .status-available .available.green{
+.status-available .available.green{
   color: var(--color-green);
   font-size: 1.1rem;
 }
@@ -281,16 +290,43 @@ main {
 .content .aboutme {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 1.2rem;
 }
 .content .aboutme .description{
-  padding: 16px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
-  flex: 2.5;
-  gap: 1rem;
+  flex: 2;
+  gap: 1.2rem;
 }
 
+/*EXPERIENCE*/
+.experience{
+  background-color: var(--color-white1);
+  border-radius: 22px;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.experience h3 {
+  font-size: 35px;
+  font-weight: 100;
+}
+.content-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+.sub-heading{
+  background-color: var(--color-white3);
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 100;
+  border-radius: 24px;
+  width: fit-content;
+}
 
 /*FOOTER*/
 footer{
