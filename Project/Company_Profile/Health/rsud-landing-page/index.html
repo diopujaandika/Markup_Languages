@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page rumah sakit dengan navigasi dropdown yang responsif.">
+  <title>RSUD dr. Iskak — Melayani dengan Sepenuh Hati</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#" aria-label="RSUD dr. Iskak, Beranda">
+        <span class="brand-mark"><i class="ri-add-fill"></i></span>
+        <span class="brand-copy"><strong>RSUD dr. Iskak</strong><small>Tulungagung</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu">
+        <i class="ri-menu-line"></i>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a class="nav-link active" href="#beranda">Beranda</a>
+
+        <div class="nav-item has-dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Profil <i class="ri-arrow-down-s-line"></i></button>
+          <div class="dropdown">
+            <a href="#profil"><i class="ri-shield-line"></i> Profil &amp; Sejarah</a>
+            <a href="#struktur"><i class="ri-node-tree"></i> Struktur Organisasi</a>
+            <a href="#akreditasi"><i class="ri-award-line"></i> Akreditasi &amp; Penghargaan</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Layanan <i class="ri-arrow-down-s-line"></i></button>
+          <div class="dropdown">
+            <a href="#rawat-jalan"><i class="ri-heart-pulse-line"></i> Rawat Jalan</a>
+            <a href="#rawat-inap"><i class="ri-hospital-line"></i> Rawat Inap</a>
+            <a href="#igd"><i class="ri-first-aid-kit-line"></i> Instalasi Gawat Darurat</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Dokter <i class="ri-arrow-down-s-line"></i></button>
+          <div class="dropdown">
+            <a href="#dokter"><i class="ri-user-heart-line"></i> Cari Dokter</a>
+            <a href="#jadwal"><i class="ri-calendar-line"></i> Jadwal Dokter</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Informasi <i class="ri-arrow-down-s-line"></i></button>
+          <div class="dropdown">
+            <a href="#berita"><i class="ri-newspaper-line"></i> Berita &amp; Artikel</a>
+            <a href="#tarif"><i class="ri-wallet-3-line"></i> Informasi Tarif</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <button class="nav-link dropdown-toggle" aria-expanded="false">Layanan Publik <i class="ri-arrow-down-s-line"></i></button>
+          <div class="dropdown dropdown-right">
+            <a href="#pendaftaran"><i class="ri-calendar-check-line"></i> Pendaftaran Online</a>
+            <a href="#pengaduan"><i class="ri-chat-1-line"></i> Pengaduan &amp; Saran</a>
+            <a href="#standar"><i class="ri-file-list-3-line"></i> Standar Pelayanan</a>
+          </div>
+        </div>
+        <a class="nav-link" href="#kontak">Kontak</a>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema"><i class="ri-sun-line"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Rumah Sakit Rujukan Regional Tipe B</div>
+          <h1>Melayani dengan Sepenuh Hati, untuk Tulungagung yang Lebih Sehat</h1>
+          <p>RSUD dr. Iskak Tulungagung menghadirkan layanan kesehatan paripurna — IGD 24 jam dengan sistem TEMS, poliklinik spesialis lengkap, serta pendaftaran online yang mudah dan cepat.</p>
+          <div class="hero-actions">
+            <a class="button button-light" href="#pendaftaran"><i class="ri-checkbox-circle-line"></i> Pendaftaran Online</a>
+            <a class="button button-outline" href="#jadwal">Jadwal Dokter</a>
+          </div>
+          <div class="stats">
+            <div><strong>30+</strong><span>Poliklinik Spesialis</span></div>
+            <div><strong>450+</strong><span>Tempat Tidur</span></div>
+            <div><strong>120+</strong><span>Dokter &amp; Spesialis</span></div>
+          </div>
+        </div>
+
+        <aside class="quick-panel" aria-label="Akses cepat">
+          <div class="emergency-card" id="igd">
+            <div class="emergency-heading">
+              <span class="emergency-icon"><i class="ri-pulse-line"></i></span>
+              <div><span>Instalasi Gawat Darurat</span><strong>(0355) 322609</strong></div>
+            </div>
+            <p>Tulungagung Emergency Medical Service (TEMS) — ambulans siaga 24 jam, respons cepat kegawatdaruratan.</p>
+          </div>
+          <a class="quick-link" href="#pendaftaran"><i class="ri-calendar-line"></i><span>Ambil Antrean Online</span><i class="ri-arrow-right-line"></i></a>
+          <a class="quick-link" href="#jadwal"><i class="ri-time-line"></i><span>Cek Jadwal Dokter</span><i class="ri-arrow-right-line"></i></a>
+          <a class="quick-link" href="#tarif"><i class="ri-money-dollar-circle-line"></i><span>Informasi Tarif</span><i class="ri-arrow-right-line"></i></a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="below-fold container" id="layanan">
+      <div><span class="section-kicker">LAYANAN KAMI</span><h2>Informasi kesehatan dalam satu tempat</h2></div>
+      <div class="service-grid">
+        <article class="service-card" id="pendaftaran"><i class="ri-calendar-check-line"></i><h3>Pendaftaran Online</h3><p>Temukan alur pendaftaran dan informasi antrean pasien.</p></article>
+        <article class="service-card" id="jadwal"><i class="ri-stethoscope-line"></i><h3>Jadwal Dokter</h3><p>Lihat jadwal praktik dokter dan layanan poliklinik.</p></article>
+        <article class="service-card" id="tarif"><i class="ri-wallet-3-line"></i><h3>Informasi Tarif</h3><p>Pelajari informasi tarif dan administrasi pelayanan.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <a class="emergency-float" href="tel:0355322609"><i class="ri-phone-line"></i> IGD 24 Jam</a>
+  <script src="js/script.js"></script>
+</body>
+</html>
